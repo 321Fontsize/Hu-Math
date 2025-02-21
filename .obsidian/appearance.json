@@ -1,0 +1,10 @@
+{
+  "enabledCssSnippets": [
+    "cyletix-pdf-reverse",
+    "cyletix-appendix-icon",
+    "cyletix-md-icon"
+  ],
+  "cssTheme": "Vanilla AMOLED",
+  "theme": "obsidian",
+  "baseFontSize": 18
+}
