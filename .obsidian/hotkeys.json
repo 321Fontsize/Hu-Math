@@ -88,14 +88,6 @@
       "key": "Q"
     }
   ],
-  "editor:toggle-source": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "V"
-    }
-  ],
   "insert-current-date": [
     {
       "modifiers": [
@@ -177,6 +169,14 @@
         "Mod"
       ],
       "key": "R"
+    }
+  ],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "."
     }
   ]
 }
