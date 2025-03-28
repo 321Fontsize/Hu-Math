@@ -5,6 +5,7 @@
     "cyletix-md-icon"
   ],
   "cssTheme": "Vanilla AMOLED",
-  "theme": "obsidian",
-  "baseFontSize": 18
+  "theme": "moonstone",
+  "baseFontSize": 18,
+  "accentColor": ""
 }
