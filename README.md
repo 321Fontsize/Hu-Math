@@ -2,6 +2,8 @@
 
 基于Obsidian建立个人的数学知识库！  
 
+点击访问：[/ | Hu-Math](https://321fontsize.github.io/Hu-Math/)
+
 ---
 ## 目录
 
