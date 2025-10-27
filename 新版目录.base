@@ -1,0 +1,65 @@
+summaries:
+  Empty: values.filter(value.isType("null")).length
+filters:
+  or:
+    - and:
+        - file.path.contains("Math/")
+        - or:
+            - file.path.contains("线性代数/")
+        - file.ext == "md"
+        - file.tags.contains("数学")
+    - and:
+        - '!file.path.contains("Math/")'
+        - or:
+            - file.path.startsWith("线性代数/")
+        - file.ext == "md"
+        - file.tags.contains("数学")
+formulas:
+  未命名: ""
+views:
+  - type: table
+    name: 总览
+    order:
+      - finished
+      - file.name
+      - chapter
+      - author
+      - dlink
+      - file.backlinks
+      - tags
+      - aliases
+      - file.path
+      - file.tags
+      - file.folder
+      - file.embeds
+    sort:
+      - property: file.folder
+        direction: DESC
+      - property: file.path
+        direction: ASC
+      - property: file.backlinks
+        direction: DESC
+      - property: file.name
+        direction: DESC
+      - property: dlink
+        direction: DESC
+    columnSize: {}
+  - type: table
+    name: 线性代数
+    filters:
+      and:
+        - file.path.contains("线性代数/")
+    order:
+      - file.name
+      - chapter
+      - dlink
+      - author
+      - finished
+      - file.path
+      - file.tags
+    sort:
+      - property: chapter
+        direction: ASC
+      - property: file.path
+        direction: DESC
+    columnSize: {}
